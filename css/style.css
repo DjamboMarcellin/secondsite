@@ -1,24 +1,71 @@
-@import url('https://fonts.googleapis.com/css2? family= Lora & family= Roboto+Serif:opsz@8..144 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto+Serif:wght@400;700&display=swap');
 
-@import url("components/container.css");
-@import url("components/avatar.css");
-@import url("components/button.css");
-@import url("components/banner.css");
+/* Réinitialisation de la marge et du rembourrage */
+body, h1, h2, h3, p, ul, ol, li {
+	margin: 0;
+	padding: 0;
+}
 
 body {
-	font-family: 'Lora' serif;
-	font-size: 10px;
+	font-family: 'Lora', serif;
+	font-size: 16px;
 }
-h1,h2,h3{
-	font-family: 'Roboto' sans-serif;
+
+h1, h2, h3 {
+	font-family: 'Roboto Serif', serif;
 	font-weight: bold;
 }
 
-a{
+a {
 	text-decoration: none;
-	color:#6B72E1;
+	color: #6B72E1;
 	transition: color 0.3s ease;
 }
-a:hover{
+
+a:hover {
 	color: yellow;
 }
+
+/* Ajoutez les styles spécifiques pour les composants suivants */
+
+/* components/container.css */
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* components/avatar.css */
+.avatar {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+/* components/button.css */
+.btn_blue {
+	background-color: #6B72E1;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+/* components/banner.css */
+.banner {
+	background-color: #f2f2f2;
+	padding: 50px 0;
+	text-align: center;
+}
+
+.banner h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.banner h2 {
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+}
+
+/* Ajoutez les autres styles spécifiques pour vos composants */
